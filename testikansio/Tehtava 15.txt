@@ -1,6 +1,6 @@
 using System;
 
-namespace Tehtävä_15
+namespace Tehtävä_15-1
 {
     class Program
     {
