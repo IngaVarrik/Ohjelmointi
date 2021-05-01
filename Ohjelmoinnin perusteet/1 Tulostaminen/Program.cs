@@ -19,9 +19,7 @@ namespace Hei_Maailma_
             int luku = int.Parse(syote);
             Console.WriteLine("Hei " + Name + ", " + luku + "!");
 
-
             Console.ReadLine();
-
         }
     }
 }
