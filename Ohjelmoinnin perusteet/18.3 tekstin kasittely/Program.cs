@@ -1,0 +1,59 @@
+﻿using System;
+
+namespace _18_Tekstin_käsittely
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string merkkijono;
+            Console.WriteLine("Anna näppäimistöltä merkkijono: ");
+            merkkijono = Console.ReadLine();
+            Console.WriteLine();
+            //Console.WriteLine(merkkijono);
+
+            char[] array = merkkijono.ToCharArray();
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                // Get character from array. 
+                char letter = array[i];
+
+                // Display each letter. 
+                if (letter == ' ') Console.Write("\n");
+                else Console.Write(letter);
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+            for (int i = 0; i < array.Length; i++)
+            {
+                // Get character from array. 
+                char letter = array[i];
+
+                // Display each letter. 
+                Console.Write(letter);
+                if (letter == ' ') Console.Write("\n");
+                else Console.Write(" ");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+            for (int i = array.Length - 1; i >= 0; i--)
+            {
+                // Get character from array. 
+                char letter = array[i];
+                // Display each letter. 
+                if (letter == ' ') Console.Write("\n");
+                else Console.Write(letter);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
+            int x = merkkijono.IndexOf("a");
+
+            if (x == -1)
+                Console.WriteLine("Merkkiä a ei löytynyt.");
+            else Console.WriteLine("Merkki a löytyy paikasta " + x);
+            Console.ReadLine();
+        }
+    }
+}
