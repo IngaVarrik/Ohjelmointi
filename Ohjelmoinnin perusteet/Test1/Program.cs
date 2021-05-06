@@ -16,19 +16,26 @@ namespace Test1
                         int age = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Hei " + name + ", " + age + "!");
                         Console.ReadKey();
-            
+             
             //Tee ohjelma, joka laskee ja tulostaa muuttujien avulla alla olevan laskutoimituksen näkymän.
+        
+            Console.WriteLine("Anna numero 0-10 ");
+            int b = Convert.ToInt32(Console.ReadLine());
             int a = 0;
-            int b = 5;
-            int laskelma = a * b;
 
-            Console.WriteLine(++a + " * " + b + " = " + a * b);
-            Console.WriteLine(++a + " * " + b + " = " + a * b);
-            Console.WriteLine(++a + " * " + b + " = " + a * b);
-            Console.WriteLine(++a + " * " + b + " = " + a * b);
-            Console.WriteLine(++a + " * " + b + " = " + a * b);
+            Console.WriteLine(++a + " * " + b + " = " + a * b + "  " + a + " / " + b + " = " + a / b + "  " + a + " % " + b + " = " + a % b + "\n");
+            Console.WriteLine(++a + " * " + b + " = " + a * b + "  " + a + " / " + b + " = " + a / b + "  " + a + " % " + b + " = " + a % b + "\n");
+            Console.WriteLine(++a + " * " + b + " = " + a * b + "  " + a + " / " + b + " = " + a / b + "  " + a + " % " + b + " = " + a % b + "\n");
+            Console.WriteLine(++a + " * " + b + " = " + a * b + "  " + a + " / " + b + " = " + a / b + "  " + a + " % " + b + " = " + a % b + "\n");
+            Console.WriteLine(++a + " * " + b + " = " + a * b + "  " + a + " / " + b + " = " + a / b + "  " + a + " % " + b + " = " + a % b + "\n");
+            Console.WriteLine(++a + " * " + b + " = " + a * b + "  " + a + " / " + b + " = " + a / b + "  " + a + " % " + b + " = " + a % b + "\n");
+            Console.WriteLine(++a + " * " + b + " = " + a * b + "  " + a + " / " + b + " = " + a / b + "  " + a + " % " + b + " = " + a % b + "\n");
+            Console.WriteLine(++a + " * " + b + " = " + a * b + "  " + a + " / " + b + " = " + a / b + "  " + a + " % " + b + " = " + a % b + "\n");
+            Console.WriteLine(++a + " * " + b + " = " + a * b + "  " + a + " / " + b + " = " + a / b + "  " + a + " % " + b + " = " + a % b + "\n");
+            Console.WriteLine(++a + " * " + b + " = " + a * b + "  " + a + " / " + b + " = " + a / b + "  " + a + " % " + b + " = " + a % b + "\n");
+            ;
             Console.ReadLine();
-            */
+           */
         }
     }
 }
