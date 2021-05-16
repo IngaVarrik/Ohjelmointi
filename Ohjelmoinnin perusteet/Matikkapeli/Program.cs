@@ -30,8 +30,8 @@ namespace Matikkapeli
             int questionCount = 0;
             for (questionCount = 0; ; questionCount++)
             {
-                int num01 = rand.Next(11);
-                int num02 = rand.Next(11);
+                int num01 = rand.Next(100);
+                int num02 = rand.Next(100);
 
                 Console.Write($"Paljonko on {num01} plus {num02}? ");
 
@@ -101,8 +101,15 @@ namespace Matikkapeli
             int questionCount = 0;
             for (questionCount = 0; ; questionCount++)
             {
-                int num01 = rand.Next(11);
-                int num02 = rand.Next(11);
+                int num01;
+                int num02;
+                do
+                {
+                    num01 = rand.Next(100);
+                    num02 = rand.Next(100);
+                    if (allowNegativeResults) break;
+                } while (num01 - num02 < 0);
+
 
                 Console.Write($"Paljonko on {num01} minus {num02}? ");
 
