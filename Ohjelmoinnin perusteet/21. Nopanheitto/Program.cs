@@ -6,7 +6,7 @@ namespace _21._Nopanheitto
     {
         static void Main(string[] args)
         {
-           // Ohjelmassa kahden nopan heittäminen suoritetaan viisi kertaa ja lopuksi tulostetaan kaikkien heittojen yhteenlaskettu summa.
+           // Ohjelmassa kahden nopan heittäminen suoritetaan käyttäjän valitsema määrä kertoja ja lopuksi tulostetaan kaikkien heittojen yhteenlaskettu summa.
            // Käytä for-toistorakennetta.Käytä silmäluvun arpomiseen C#:n Random-luokkaa.
            
             Console.WriteLine("Tervetuloa nopanheitto ohjelmaan!");
@@ -15,7 +15,11 @@ namespace _21._Nopanheitto
             Random rnd = new Random();
 
             int laskelma = 0;
-            for (int i = 0; i < 5; i++)
+            int kierros = 0;
+            Console.WriteLine("Valitse heitettävien kierrosten lukumäärä.");
+            kierros = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < kierros; i++)
             {                
                 int dice = rnd.Next(1, 7);
                 
