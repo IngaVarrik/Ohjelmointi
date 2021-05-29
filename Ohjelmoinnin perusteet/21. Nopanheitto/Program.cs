@@ -20,9 +20,11 @@ namespace _21._Nopanheitto
                 int dice = rnd.Next(1, 7);
                 
                 int dice2 = rnd.Next(1, 7);
-            
-                Console.WriteLine(dice + " ja " + dice2);
-                laskelma = laskelma + dice + dice2;
+
+                int dice3 = rnd.Next(1, 7);
+
+                Console.WriteLine(dice + " ja " + dice2 + " ja " + dice3);
+                laskelma = laskelma + dice + dice2 + dice3;
             }
             Console.WriteLine("\nKaikkien heittojen yhteenlaskettu summa on: " + laskelma);
         }
